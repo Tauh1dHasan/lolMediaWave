@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+
+
     public function index() 
     {
     	// Getting Current Day
@@ -52,4 +54,25 @@ class PagesController extends Controller
 
     	return view('pages.home');
     }
+
+
+
+    public function about()
+    {
+    	return view('pages.about');
+    }
+
+
+    public function contact()
+    {
+    	return view('pages.contact');
+    }
+
+    public function play()
+    {
+    	// need to create model $code will be matched from database
+    	return view('pages.play');
+    	
+    }
+
 }

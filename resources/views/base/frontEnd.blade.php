@@ -1,3 +1,43 @@
+@php
+  $CurrentDay = date('l');
+
+  switch ($CurrentDay) {
+    
+    case 'Saturday':
+      $dayColor = '#F62B00';
+      break;
+
+    case 'Sunday':
+      $dayColor = '#6500BF';
+      break;
+
+    case 'Monday':
+      $dayColor = '#FE8002';
+      break;
+
+    case 'Tuesday':
+      $dayColor = '#FFE60F';
+      break;
+
+    case 'Wednesday':
+      $dayColor = '#00B9FF';
+      break;
+
+    case 'Thursday':
+      $dayColor = '#BD3AFF';
+      break;
+
+    case 'Friday':
+      $dayColor = '#36FF00';
+      break;
+    
+    default:
+      return "Days Are over... (base blade)";
+      break;
+  }
+  
+@endphp
+
 <!doctype html>
 <html lang="en-US">
 <head>
@@ -5,7 +45,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Home Page</title>
+   <title>GodIsThePlug</title>
    <!-- Favicon -->
    <link rel="shortcut icon" href="{{ URL::asset('images/favicon.ico') }}" />
    <!-- Bootstrap CSS -->
@@ -25,10 +65,10 @@
    </div>
 
    <!-- Navbar -->
-   @include('incFrontend/nav');
+   @include('incFrontend/nav')
 
    {{-- Main Body --}}
-   @yield('mainBody');
+   @yield('content')
 
 
 
@@ -72,7 +112,9 @@
    <!-- MainContent End-->
    <!-- back-to-top -->
    <div id="back-to-top">
-      <a class="top" href="#top" id="top"> <i class="fa fa-angle-up"></i> </a>
+      <a class="top" href="#top" id="top" style="background: {{ $dayColor }}"> 
+        <i class="fa fa-angle-up"></i> 
+      </a>
    </div>
    <!-- back-to-top End -->
    <!-- jQuery, Popper JS -->

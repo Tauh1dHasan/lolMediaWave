@@ -1,3 +1,43 @@
+@php
+  $CurrentDay = date('l');
+
+  switch ($CurrentDay) {
+    
+    case 'Saturday':
+      $dayColor = '#F62B00';
+      break;
+
+    case 'Sunday':
+      $dayColor = '#6500BF';
+      break;
+
+    case 'Monday':
+      $dayColor = '#FE8002';
+      break;
+
+    case 'Tuesday':
+      $dayColor = '#FFE60F';
+      break;
+
+    case 'Wednesday':
+      $dayColor = '#00B9FF';
+      break;
+
+    case 'Thursday':
+      $dayColor = '#BD3AFF';
+      break;
+
+    case 'Friday':
+      $dayColor = '#36FF00';
+      break;
+    
+    default:
+      return "Days Are over... (base blade)";
+      break;
+  }
+  
+@endphp
+
 <header id="main-header">
       <div class="main-header">
          <div class="container-fluid">
@@ -13,27 +53,27 @@
                            <span class="navbar-menu-icon navbar-menu-icon--bottom"></span>
                         </div>
                      </a>
-                     <a class="navbar-brand" href="index.html"> 
+                     <a class="navbar-brand" href="/"> 
                         <!-- <img class="img-fluid logo" src="images/logo.png"
                         alt="streamit" /> -->
-                        <p><span style="color: white; font-size: 1.5em">GodIsThePlug</span></p> 
+                        <p><span style="color: {{ $dayColor }}; font-size: 1.5em">GodIsThePlug</span></p> 
                      </a>
                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="menu-main-menu-container">
                            <ul id="top-menu" class="navbar-nav ml-auto">
                               <li class="menu-item">
-                                 <a href="index.html">Home</a>
+                                 <a href="/">Home</a>
                               </li>
                               <li class="menu-item">
-                                 <a href="about-us.html">About Us</a>
+                                 <a href="/about">About Us</a>
                               </li>
                               <li class="menu-item">
-                                 <a href="contact.html">Contact Us</a>
+                                 <a href="/contact">Contact Us</a>
                               </li>                                                              
                            </ul>
                         </div>
                      </div>
-                     <div class="mobile-more-menu">
+                     {{-- <div class="mobile-more-menu">
                         <a href="javascript:void(0);" class="more-toggle" id="dropdownMenuButton"
                            data-toggle="more-toggle" aria-haspopup="true" aria-expanded="false">
                         <i class="ri-more-line"></i>
@@ -58,8 +98,8 @@
                               </ul>
                            </div>
                         </div>
-                     </div>
-                     <div class="navbar-right menu-right">
+                     </div> --}}
+                     {{-- <div class="navbar-right menu-right">
                         <ul class="d-flex align-items-center list-inline m-0">
                            <li class="nav-item nav-icon">
                               <a href="#" class="search-toggle device-search">
@@ -76,7 +116,7 @@
                               </div>
                            </li>
                         </ul>
-                     </div>
+                     </div> --}}
                   </nav>
                   <div class="nav-overlay"></div>
                </div>
