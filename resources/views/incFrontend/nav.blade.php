@@ -56,7 +56,7 @@
                      <a class="navbar-brand" href="/"> 
                         <!-- <img class="img-fluid logo" src="images/logo.png"
                         alt="streamit" /> -->
-                        <p><span style="color: {{ $dayColor }}; font-size: 1.5em">GodIsThePlug</span></p> 
+                        <p><span style="color: {{ $dayColor }}; font-size: 1.5em; font-family: 'Dancing Script', cursive;">GodIsThePlug</span></p> 
                      </a>
                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="menu-main-menu-container">

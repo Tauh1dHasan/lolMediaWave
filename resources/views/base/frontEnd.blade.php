@@ -56,6 +56,10 @@
    <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
    <!-- Responsive -->
    <link rel="stylesheet" href="{{ URL::asset('css/responsive.css') }}" />
+
+   {{-- google font to use in logo --}}
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -96,10 +100,26 @@
                           Follow Us :
                       </h6>
                       <ul class="info-share"> 
-                          <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
-                          <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
-                          <li><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
-                          <li><a target="_blank" href="#"><i class="fa fa-github"></i></a></li>
+                          <li>
+                            <a target="_blank" href="#" style="background: {{ $dayColor }}">
+                              <i class="fa fa-facebook"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a target="_blank" href="#" style="background: {{ $dayColor }}">
+                              <i class="fa fa-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a target="_blank" href="#" style="background: {{ $dayColor }}">
+                              <i class="fa fa-google-plus"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a target="_blank" href="#" style="background: {{ $dayColor }}">
+                              <i class="fa fa-github"></i>
+                            </a>
+                          </li>
                       </ul>
 
                   </div>
