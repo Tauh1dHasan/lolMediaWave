@@ -32,7 +32,7 @@
                <li class="line-height pt-3">
 
                   <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
-                     <img src="assets/images/user/1.jpg" class="img-fluid rounded-circle mr-3" alt="user">
+                     Account
                   </a>
 
                   <div class="iq-sub-dropdown iq-user-dropdown">

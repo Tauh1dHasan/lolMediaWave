@@ -7,19 +7,19 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <title>Admin GodIsThePlug</title>
    <!-- Favicon -->
-   <link rel="shortcut icon" href="https://iqonic.design/themes/streamitnew/dashboard/html/assets/images/favicon.ico" />
+   <link rel="shortcut icon" href="{{ URL::asset('https://iqonic.design/themes/streamitnew/dashboard/html/assets/images/favicon.ico') }}" />
    <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="{{ URL::asset('assets/css/bootstrap.min.css') }}">
    <!--datatable CSS -->
-   <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+   <link rel="stylesheet" href="{{ URL::asset('assets/css/dataTables.bootstrap4.min.css') }}">
    <!-- Typography CSS -->
-   <link rel="stylesheet" href="assets/css/typography.css">
+   <link rel="stylesheet" href="{{ URL::asset('assets/css/typography.css') }}">
    <!-- Style CSS -->
-   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="{{ URL::asset('assets/css/style.css') }}">
    <!-- Responsive CSS -->
-   <link rel="stylesheet" href="assets/css/responsive.css">
+   <link rel="stylesheet" href="{{ URL::asset('assets/css/responsive.css') }}">
    {{-- line awesome cdn --}}
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"/>
+   <link rel="stylesheet" href="{{ URL::asset('https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css') }}"/>
 </head>
 <body>
    <!-- loader Start -->
@@ -65,36 +65,36 @@
    <!-- Footer END -->
    <!-- Optional JavaScript -->
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="assets/js/jquery.min.js"></script>
-   <script src="assets/js/popper.min.js"></script>
-   <script src="assets/js/bootstrap.min.js"></script>
-   <script src="assets/js/jquery.dataTables.min.js"></script>
-   <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+   <script src="{{ URL::asset('assets/js/jquery.min.js') }}"></script>
+   <script src="{{ URL::asset('assets/js/popper.min.js') }}"></script>
+   <script src="{{ URL::asset('assets/js/bootstrap.min.js') }}"></script>
+   <script src="{{ URL::asset('assets/js/jquery.dataTables.min.js') }}"></script>
+   <script src="{{ URL::asset('assets/js/dataTables.bootstrap4.min.js') }}"></script>
    <!-- Appear JavaScript -->
-   <script src="assets/js/jquery.appear.js"></script>
+   <script src="{{ URL::asset('assets/js/jquery.appear.js') }}"></script>
    <!-- Countdown JavaScript -->
-   <script src="assets/js/countdown.min.js"></script>
+   <script src="{{ URL::asset('assets/js/countdown.min.js') }}"></script>
    <!-- Select2 JavaScript -->
-   <script src="assets/js/select2.min.js"></script>
+   <script src="{{ URL::asset('assets/js/select2.min.js') }}"></script>
    <!-- Counterup JavaScript -->
-   <script src="assets/js/waypoints.min.js"></script>
-   <script src="assets/js/jquery.counterup.min.js"></script>
+   <script src="{{ URL::asset('assets/js/waypoints.min.js') }}"></script>
+   <script src="{{ URL::asset('assets/js/jquery.counterup.min.js') }}"></script>
    <!-- Wow JavaScript -->
-   <script src="assets/js/wow.min.js"></script>
+   <script src="{{ URL::asset('assets/js/wow.min.js') }}"></script>
    <!-- Slick JavaScript -->
-   <script src="assets/js/slick.min.js"></script>
+   <script src="{{ URL::asset('assets/js/slick.min.js') }}"></script>
    <!-- Owl Carousel JavaScript -->
-   <script src="assets/js/owl.carousel.min.js"></script>
+   <script src="{{ URL::asset('assets/js/owl.carousel.min.js') }}"></script>
    <!-- Magnific Popup JavaScript -->
-   <script src="assets/js/jquery.magnific-popup.min.js"></script>
+   <script src="{{ URL::asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
    <!-- Smooth Scrollbar JavaScript -->
-   <script src="assets/js/smooth-scrollbar.js"></script>
+   <script src="{{ URL::asset('assets/js/smooth-scrollbar.js') }}"></script>
    <!-- apex Custom JavaScript -->
-   <script src="assets/js/apexcharts.js"></script>
+   <script src="{{ URL::asset('assets/js/apexcharts.js') }}"></script>
    <!-- Chart Custom JavaScript -->
-   <script src="assets/js/chart-custom.js"></script>
+   <script src="{{ URL::asset('assets/js/chart-custom.js') }}"></script>
    <!-- Custom JavaScript -->
-   <script src="assets/js/custom.js"></script>
+   <script src="{{ URL::asset('assets/js/custom.js') }}"></script>
 </body>
 
 </html>

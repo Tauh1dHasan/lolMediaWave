@@ -27,10 +27,9 @@
                                     </div>
                                     <div class="iq-feature-list">
                                        <h6 class="font-weight-600 mb-0">The Last Breath</h6>
-                                       <p class="mb-0 mt-2">T.v show</p>
+                                       <p class="mb-0 mt-2">Description</p>
                                        <div class="d-flex align-items-center my-2">
-                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i> 134</p>
-                                          <p class="mb-0 "><i class="las la-download ml-2"></i> 30 k</p>
+                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i>Saturday</p>
                                        </div>
                                     </div>
                                  </div>
@@ -49,8 +48,7 @@
                                        <h6 class="font-weight-600 mb-0">Last Night</h6>
                                        <p class="mb-0 mt-2">Movie</p>
                                        <div class="d-flex align-items-center my-2">
-                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i> 133</p>
-                                          <p class="mb-0 "><i class="las la-download ml-2"></i> 20 k</p>
+                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i>Sunday</p>
                                        </div>
                                     </div>
                                  </div>
@@ -171,6 +169,9 @@
                      <div class="iq-card-header d-flex justify-content-between">
                         <div class="iq-header-title">
                            <h4 class="card-title">Recent Added</h4>
+                        </div>
+                        <div class="iq-card-header-toolbar d-flex align-items-center">
+                           <a href="/add-video" class="btn btn-primary">Add video</a>
                         </div>
                      </div>
                      <div class="iq-card-body">

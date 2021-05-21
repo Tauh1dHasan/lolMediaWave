@@ -26,14 +26,14 @@
 
             <li>
                <a href="/featured-videos" class="iq-waves-effect">
-                  <i class="las la-home iq-arrow-left"></i>
+                  <i class="las la-film"></i>
                   <span>Featured Videos</span>
                </a>
             </li>
 
             <li>
                <a href="/all-videos" class="iq-waves-effect">
-                  <i class="las la-home iq-arrow-left"></i>
+                  <i class="las la-film"></i>
                   <span>All Videos</span>
                </a>
             </li>
@@ -43,78 +43,54 @@
                <a href="#category" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false">
                   <i class="las la-list-ul"></i>
                   <span>Videos By Day</span>
-                  <i class="ri-arrow-right-s-line iq-arrow-right"></i>
+                  <i class="las la-angle-double-right"></i>
                </a>
 
                <ul id="category" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
 
                   <li>
-                     <a href="/saturday">
+                     <a href="/day/saturday">
                         <i class="las la-user-plus"></i>Saturday
                      </a>
                   </li>
 
                   <li>
-                     <a href="/sunday">
+                     <a href="/day/sunday">
                         <i class="las la-eye"></i>Sunday
                      </a>
                   </li>
 
                   <li>
-                     <a href="/monday">
+                     <a href="/day/monday">
                         <i class="las la-eye"></i>Monday
                      </a>
                   </li>
 
                   <li>
-                     <a href="/tuesday">
+                     <a href="/day/tuesday">
                         <i class="las la-eye"></i>Tuesday
                      </a>
                   </li>
 
                   <li>
-                     <a href="/wednesday">
+                     <a href="/day/wednesday">
                         <i class="las la-eye"></i>Wednesday
                      </a>
                   </li>
 
                   <li>
-                     <a href="/thursday">
+                     <a href="/day/thursday">
                         <i class="las la-eye"></i>Thursday
                      </a>
                   </li>
 
                   <li>
-                     <a href="/friday">
+                     <a href="/day/friday">
                         <i class="las la-eye"></i>Friday
                      </a>
                   </li>
 
                </ul>
-            </li>
-
-            <li>
-               <a href="#movie" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false">
-                  <i class="las la-film"></i>
-                  <span>Movie</span>
-                  <i class="ri-arrow-right-s-line iq-arrow-right"></i>
-               </a>
-
-               <ul id="movie" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-                  <li>
-                     <a href="add-movie.html">
-                        <i class="las la-user-plus"></i>Add Movie
-                     </a>
-                  </li>
-
-                  <li>
-                     <a href="movie-list.html">
-                        <i class="las la-eye"></i>Movie List
-                     </a>
-                  </li>
-                  
-               </ul>
-
             </li>
 
          </ul>

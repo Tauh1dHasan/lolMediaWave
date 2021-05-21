@@ -112,12 +112,12 @@
                           </li>
                           <li>
                             <a target="_blank" href="#" style="background: {{ $dayColor }}">
-                              <i class="fa fa-google-plus"></i>
+                              <i class="fa fa-instagram"></i>
                             </a>
                           </li>
                           <li>
                             <a target="_blank" href="#" style="background: {{ $dayColor }}">
-                              <i class="fa fa-github"></i>
+                              <i class="fa fa-youtube"></i>
                             </a>
                           </li>
                       </ul>
