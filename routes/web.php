@@ -31,8 +31,12 @@ Route::get('/play', [PagesController::class, 'play']);
 // Backend Routes
 Route::get('/dashboard', [DashboardController::class, 'index']);
 
+// Featured Videos
 Route::get('/featured-videos', [FeaturedVideosController::class, 'index']);
+Route::get('/featured-videos/edit/{id}', [FeaturedVideosController::class, 'edit']);
+Route::post('featured-video/update/{id}', [FeaturedVideosController::class, 'update']);
 
+// All day videos
 Route::get('/all-videos', [AllVideosController::class, 'index']);
 
 // Get videos by day

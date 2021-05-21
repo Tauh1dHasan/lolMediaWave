@@ -4,6 +4,7 @@
 
 		<div id="content-page" class="content-page">
       <div class="container-fluid">
+         
          @if (session('success'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
               {{ session('success') }}
