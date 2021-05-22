@@ -7,6 +7,16 @@
             <div class="row">
                <div class="col-sm-12">
                   <div class="iq-card">
+
+                     @if (session('success'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                          {{ session('success') }}
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                     @endif
+
                      <div class="iq-card-header d-flex justify-content-between">
                         <div class="iq-header-title">
                            <h4 class="card-title">All Videos</h4>
@@ -20,6 +30,7 @@
                            <table class="data-tables table movie_table " style="width:100%">
                               <thead>
                                  <tr>
+                                    <th>Video</th>
                                     <th>Name</th>
                                     <th>Day</th>
                                     <th>Updated</th>
@@ -29,144 +40,50 @@
                               </thead>
                               <tbody>
 
-                                 <tr>
-                                    <td>
-                                       <div class="media align-items-center">
-                                          <div class="iq-movie">
-                                            <img src="assets/images/movie-thumb/06.jpg" class="img-border-radius avatar-40 img-fluid">
-                                          </div>
-                                          <div class="media-body text-white text-left ml-3">
-                                             <p class="mb-0">Champions</p>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td>Saturday</td>
-                                    <td>19/5/2021</td>
-                                    <td>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus non elit
-                                          a scelerisque. Etiam feugiat luctus est,
-                                          vel commodo odio rhoncus sit amet
-                                       </p>
-                                    </td>
-                                    <td>
-                                       <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-warning" data-toggle="tooltip" data-placement="top" title=""
-                                             data-original-title="View" href="#">
-                                             <i class="lar la-edit"></i>
-                                         </a>
-                                         <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
-                                             data-original-title="Delete" href="#"><i
-                                                class="ri-delete-bin-line"></i></a>
-                                       </div>
-                                    </td>
-                                 </tr>
+                                 @foreach ($allVideos as $video)
 
-                                 <tr>
-                                    <td>
-                                       <div class="media align-items-center">
-                                          <div class="iq-movie">
-                                             <a href="javascript:void(0);"><img
-                                                   src="../assets/images/movie-thumb/05.jpg"
-                                                   class="img-border-radius avatar-40 img-fluid" alt=""></a>
-                                          </div>
-                                          <div class="media-body text-white text-left ml-3">
-                                             <p class="mb-0">Last Race</p>
-                                             <small>2h 20m</small>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td>HD</td>
-                                    <td>Action</td>
-                                    <td>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus non elit
-                                          a scelerisque. Etiam feugiat luctus
-                                          est, vel commodo odio rhoncus sit amet
-                                       </p>
-                                    </td>
-                                    <td>
-                                       <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-warning" data-toggle="tooltip" data-placement="top" title=""
-                                             data-original-title="View" href="#"><i class="lar la-eye"></i></a>
-                                          <a class="iq-bg-success" data-toggle="tooltip" data-placement="top" title=""
-                                             data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
-                                             data-original-title="Delete" href="#"><i
-                                                class="ri-delete-bin-line"></i></a>
-                                       </div>
-                                    </td>
-                                 </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="media align-items-center">
+                                             <div class="iq-movie">
 
-                                 <tr>
-                                    <td>
-                                       <div class="media align-items-center">
-                                          <div class="iq-movie">
-                                             <a href="javascript:void(0);"><img
-                                                   src="../assets/images/movie-thumb/08.jpg"
-                                                   class="img-border-radius avatar-40 img-fluid" alt=""></a>
-                                          </div>
-                                          <div class="media-body text-white text-left ml-3">
-                                             <p class="mb-0">Boop Bitty</p>
-                                             <small>2h 40m</small>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td>Full HD</td>
-                                    <td>Thriller</td>
-                                    <td>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus non elit
-                                          a scelerisque. Etiam feugiat luctus
-                                          est, vel commodo odio rhoncus sit amet
-                                       </p>
-                                    </td>
-                                    <td>
-                                       <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-warning" data-toggle="tooltip" data-placement="top" title=""
-                                             data-original-title="View" href="#"><i class="lar la-eye"></i></a>
-                                          <a class="iq-bg-success" data-toggle="tooltip" data-placement="top" title=""
-                                             data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
-                                             data-original-title="Delete" href="#"><i
-                                                class="ri-delete-bin-line"></i></a>
-                                       </div>
-                                    </td>
-                                 </tr>
 
-                                 <tr>
-                                    <td>
-                                       <div class="media align-items-center">
-                                          <div class="iq-movie">
-                                             <a href="javascript:void(0);"><img
-                                                   src="../assets/images/movie-thumb/04.jpg"
-                                                   class="img-border-radius avatar-40 img-fluid" alt=""></a>
-                                          </div>
-                                          <div class="media-body text-white text-left ml-3">
-                                             <p class="mb-0">Dino Land</p>
-                                             <small>1h 40m</small>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td>HD</td>
-                                    <td>Thriller</td>
-                                    <td>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus non elit
-                                          a scelerisque. Etiam feugiat
-                                          luctus est,
-                                          vel commodo odio rhoncus sit amet
-                                       </p>
-                                    </td>
-                                    <td>
-                                       <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-warning" data-toggle="tooltip" data-placement="top" title=""
-                                             data-original-title="View" href="#"><i class="lar la-eye"></i></a>
-                                          <a class="iq-bg-success" data-toggle="tooltip" data-placement="top" title=""
-                                             data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
-                                             data-original-title="Delete" href="#"><i
-                                                class="ri-delete-bin-line"></i></a>
-                                       </div>
-                                    </td>
-                                 </tr>
+                                                <iframe src="https://www.youtube.com/embed/{{ $video->code }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+                                               
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="media align-items-center">
+                                             <div class="media-body text-white text-left ml-3">
+                                                <p class="mb-0">{{ $video->title }}</p>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>{{ $video->day }}</td>
+                                       <td>{{ $video->updated }}</td>
+                                       <td>
+                                          <p>{{ $video->description }}</p>
+                                       </td>
+                                       <td>
+                                          <div class="flex align-items-center list-user-action">
+                                             <a class="iq-bg-warning" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Update" href="/video/edit/{{ $video->id }}">
+                                                <i class="lar la-edit"></i>
+                                            </a>
+                                            <div class="flex align-items-center list-user-action">
+                                             <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Delete" href="/video/delete/{{ $video->id }}">
+                                                <i class="las la-trash"></i>
+                                            </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+
+                                 @endforeach
+                                 
                                  
                               </tbody>
                            </table>

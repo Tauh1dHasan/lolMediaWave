@@ -42,7 +42,7 @@
                            <a href="/account-setting" class="iq-sub-card iq-bg-primary-hover">
                               <div class="media align-items-center">
                                  <div class="rounded iq-card-icon iq-bg-primary">
-                                    <i class="ri-account-box-line"></i>
+                                    <i class="lar la-user"></i>
                                  </div>
                                  <div class="media-body ml-3">
                                     <h6 class="mb-0 ">Account settings</h6>
@@ -52,9 +52,7 @@
                            </a>
 
                            <div class="d-inline-block w-100 text-center p-3">
-                              <a class="bg-primary iq-sign-btn" href="sign-in.html" role="button">Sign out
-                                 <i class="ri-login-box-line ml-2"></i>
-                              </a>
+                              <a class="bg-primary iq-sign-btn" href="sign-in.html" role="button">Sign out</a>
                            </div>
 
                         </div>

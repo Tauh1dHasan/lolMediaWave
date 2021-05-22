@@ -1,0 +1,5 @@
+Start working on login system
+logout system
+Protect all the admin routes
+
+fetch all the data on front end

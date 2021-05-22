@@ -9,12 +9,12 @@
                   <div class="iq-card">
                      <div class="iq-card-header d-flex justify-content-between">
                         <div class="iq-header-title">
-                           <h4 class="card-title">Update Featured Video</h4>
+                           <h4 class="card-title">Add new video</h4>
                         </div>
                      </div>
                      <div class="iq-card-body">
 
-                        <form action="/featured-video/update/{{ $datas->id }}" method="POST">
+                        <form action="/add-video" method="POST">
                         	@csrf
                         	
                            <div class="row">
@@ -23,16 +23,29 @@
                                  <div class="row">
 
                                     <div class="col-12 form-group">
-                                       <input type="text" name="link" class="form-control" value="https://youtu.be/{{ $datas->code }}" required>
+                                       <input type="text" name="link" class="form-control" placeholder="YouTube video share link" required>
                                     </div>
 
                                     <div class="col-12 form-group">
-                                       <input type="text" name="title" class="form-control" value="{{ $datas->title }}" required>
+                                       <input type="text" name="title" class="form-control" placeholder="Video Title" required>
+                                    </div>
+
+                                    <div class="col-md-6 form-group">
+                                       <select class="form-control" name="day" id="exampleFormControlSelect1" requried>
+                                          <option value="">Select Day</option>
+                                          <option value="Saturday">Saturday</option>
+                                          <option value="Sunday">Sunday</option>
+                                          <option value="Monday">Monday</option>
+                                          <option value="Tuesday">Tuesday</option>
+                                          <option value="Wednesday">Wednesday</option>
+                                          <option value="Thursday">Thursday</option>
+                                          <option value="Friday">Friday</option>
+                                       </select>
                                     </div>
 
                                     <div class="col-12 form-group">
                                        <textarea id="text" name="description" rows="5" class="form-control"
-                                          placeholder="Description" required>{{ $datas->description }}</textarea>
+                                          placeholder="Description" placeholder="Video Description" required></textarea>
                                     </div>
                                  </div>
                               </div>
@@ -42,7 +55,7 @@
                            <div class="row">
 
                               <div class="col-12 form-group ">
-                                 <button type="submit" class="btn btn-primary">Update</button>
+                                 <button type="submit" class="btn btn-primary">Save</button>
                               </div>
 
                            </div>

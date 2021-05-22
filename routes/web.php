@@ -28,16 +28,31 @@ Route::get('/about', [PagesController::class, 'about']);
 Route::get('/contact', [PagesController::class, 'contact']);
 Route::get('/play', [PagesController::class, 'play']);
 
+
+// User Routes
+Route::get('/login', [UserController::class, 'login']);
+
+
 // Backend Routes
 Route::get('/dashboard', [DashboardController::class, 'index']);
+
 
 // Featured Videos
 Route::get('/featured-videos', [FeaturedVideosController::class, 'index']);
 Route::get('/featured-videos/edit/{id}', [FeaturedVideosController::class, 'edit']);
 Route::post('featured-video/update/{id}', [FeaturedVideosController::class, 'update']);
 
-// All day videos
+
+// All videos
 Route::get('/all-videos', [AllVideosController::class, 'index']);
+// Add video
+Route::get('/add-video', [AllVideosController::class, 'addForm']);
+Route::post('/add-video', [AllVideosController::class, 'addVideo']);
+// Edit Video
+Route::get('/video/edit/{id}', [AllVideosController::class, 'editForm']);
+Route::post('/video/update/{id}', [AllVideosController::class, 'update']);
+Route::get('/video/delete/{id}', [AllVideosController::class, 'delete']);
+
 
 // Get videos by day
 Route::get('/day/{day}', [AllVideosController::class, 'selectDay']);

@@ -62,121 +62,59 @@
 
                               <thead>
                                  <tr>
-                                    <th style="width:20%;">Movie</th>
-                                    <th style="width:10%;">Rating</th>
-                                    <th style="width:20%;">Category</th>
-                                    <th style="width:10%;">Download/Views</th>
-                                    <th style="width:10%;">User</th>
-                                    <th style="width:20%;">Date</th>
-                                    <th style="width:10%;"><i class="lar la-heart"></i></th>
+                                    <th style="width:20%;">Video</th>
+                                    <th style="width:10%;">Name</th>
+                                    <th style="width:10%;">Day</th>
+                                    <th style="width:10%;">Updated</th>
+                                    <th style="width:40%;">Description</th>
+                                    <th style="width:10%;">Action</th>
                                  </tr>
                               </thead>
 
                               <tbody>
 
-                                 <tr>
-                                    <td>
-                                       <div class="media align-items-center">
-                                          <div class="iq-movie">
-                                             <a href="javascript:void(0);"><img src="assets/images/movie-thumb/01.jpg" class="img-border-radius avatar-40 img-fluid" alt=""></a>
-                                          </div>
-                                          <div class="media-body text-white text-left ml-3">
-                                             <p class="mb-0">Champions</p>
-                                             <small>1h 40m</small>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td><i class="lar la-star mr-2"></i> 9.2</td>
-                                    <td>Horror</td>
-                                    <td>
-                                       <i class="lar la-eye "></i>
-                                    </td>
-                                    <td>Unsubcriber</td>
-                                    <td>21 July,2020</td>
-                                    <td><i class="las la-heart text-primary"></i></td>
-                                 </tr>
+                                 @foreach ($allVideos as $video)
+                                    <tr>
+                                       <td>
+                                          <div class="media align-items-center">
+                                             <div class="iq-movie">
 
-                                 <tr>
-                                    <td >
-                                       <div class="media align-items-center">
-                                          <div class="iq-movie">
-                                             <a href="javascript:void(0);"><img src="assets/images/show-thumb/05.jpg" class="img-border-radius avatar-40 img-fluid" alt=""></a>
+
+                                                <iframe src="https://www.youtube.com/embed/{{ $video->code }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+                                               
+                                             </div>
                                           </div>
-                                          <div class="media-body text-white text-left ml-3">
-                                             <p class="mb-0">Last Race</p>
+                                       </td>
+                                       <td>
+                                          <div class="media align-items-center">
+                                             <div class="media-body text-white text-left ml-3">
+                                                <p class="mb-0">{{ $video->title }}</p>
+                                             </div>
                                           </div>
-                                       </div>
-                                    </td>
-                                    <td><i class="lar la-star mr-2"></i> 7.2</td>
-                                    <td>Horror</td>
-                                    <td>
-                                       <i class="lar la-eye "></i>
-                                    </td>
-                                    <td>subcriber</td>
-                                    <td>22 July,2020</td>
-                                    <td><i class="las la-heart text-primary"></i></td>
-                                 </tr>
+                                       </td>
+                                       <td>{{ $video->day }}</td>
+                                       <td>{{ $video->updated }}</td>
+                                       <td>
+                                          <p>{{ $video->description }}</p>
+                                       </td>
+                                       <td>
+                                          <div class="flex align-items-center list-user-action">
+                                             <a class="iq-bg-warning" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Update" href="/video/edit/{{ $video->id }}">
+                                                <i class="lar la-edit"></i>
+                                            </a>
+                                            <div class="flex align-items-center list-user-action">
+                                             <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title=""
+                                             data-original-title="Delete" href="/video/delete/{{ $video->id }}">
+                                                <i class="las la-trash"></i>
+                                            </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 @endforeach
                                  
-                                 <tr>
-                                    <td>
-                                       <div class="media align-items-center">
-                                          <div class="iq-movie">
-                                             <a href="javascript:void(0);"><img src="assets/images/show-thumb/07.jpg" class="img-border-radius avatar-40 img-fluid" alt=""></a>
-                                          </div>
-                                          <div class="media-body text-white text-left ml-3">
-                                             <p class="mb-0">Boop Bitty</p>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td><i class="lar la-star mr-2"></i> 8.2</td>
-                                    <td>Thriller</td>
-                                    <td>
-                                       <i class="lar la-eye "></i>
-                                    </td>
-                                    <td>Unsubcriber</td>
-                                    <td>23 July,2020</td>
-                                    <td><i class="las la-heart text-primary"></i></td>
-                                 </tr>
-                                 <tr>
-                                    <td>
-                                       <div class="media align-items-center">
-                                          <div class="iq-movie">
-                                             <a href="javascript:void(0);"><img src="assets/images/show-thumb/10.jpg" class="img-border-radius avatar-40 img-fluid" alt=""></a>
-                                          </div>
-                                          <div class="media-body text-white text-left ml-3">
-                                             <p class="mb-0">Dino Land</p>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td><i class="lar la-star mr-2"></i> 8.5</td>
-                                    <td>Action</td>
-                                    <td>
-                                       <i class="lar la-eye "></i>
-                                    </td>
-                                    <td>Unsubcriber</td>
-                                    <td>24 July,2020</td>
-                                    <td><i class="las la-heart text-primary"></i></td>
-                                 </tr>
-                                 <tr>
-                                    <td>
-                                       <div class="media align-items-center">
-                                          <div class="iq-movie">
-                                             <a href="javascript:void(0);"><img src="assets/images/show-thumb/04.jpg" class="img-border-radius avatar-40 img-fluid" alt=""></a>
-                                          </div>
-                                          <div class="media-body text-white text-left ml-3">
-                                             <p class="mb-0">The Last Breath</p>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td><i class="lar la-star mr-2"></i> 8.9</td>
-                                    <td>Horror</td>
-                                    <td>
-                                       <i class="lar la-eye "></i>
-                                    </td>
-                                    <td>subcriber</td>
-                                    <td>25 July,2020</td>
-                                    <td><i class="las la-heart text-primary"></i></td>
-                                 </tr>
                               </tbody>
                            </table>
                         </div>

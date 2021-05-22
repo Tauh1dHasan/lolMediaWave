@@ -46,4 +46,9 @@ class UserController extends Controller
 
     	return redirect('/account-setting')->with('success', 'Social Media link updated...');
     }
+
+    public function login()
+    {
+        return 123;
+    }
 }

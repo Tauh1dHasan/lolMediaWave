@@ -28,7 +28,7 @@ class FeaturedVideosController extends Controller
     public function update(Request $request, $id)
     {
     	// getting current day
-    	$currentDay = date("jS F Y ");
+    	$currentDay = date("jS F Y");
 
     	$video = FeaturedVideo::find($id);
 // getting full url share link
