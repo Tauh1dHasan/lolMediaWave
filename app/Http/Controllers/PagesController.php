@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\FeaturedVideo;
+use App\Models\AllVideo;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -13,46 +15,11 @@ class PagesController extends Controller
     	// Getting Current Day
     	$CurrentDay = date("l");
 
-    	// Selecting contants by Current Day
-    	// switch ($CurrentDay) {
-    	// 	case 'Saturday':
-    	// 		return 'Saturday- F62B00';
-    	// 		break;
+        $featuredVideo = FeaturedVideo::where('day', $CurrentDay)->get();
 
-    	// 	case 'Sunday':
-    	// 		return 'Sunday- 6500BF';
-    	// 		break;
+        $allVideos = AllVideo::where('day', $CurrentDay)->get();
 
-    	// 	case 'Monday':
-    	// 		return 'Monday- FE8002';
-    	// 		break;
-
-    	// 	case 'Tuesday':
-    	// 		return 'Tuesday- FFE60F';
-    	// 		break;
-
-    	// 	case 'Wednesday':
-    	// 		return 'Wednesday- 00B9FF';
-    	// 		break;
-
-    	// 	case 'Thursday':
-    	// 		return 'Thursday- BD3AFF';
-    	// 		break;
-
-    	// 	case 'Friday':
-    	// 		return 'Friday- 36FF00';
-    	// 		break;
-    		
-    	// 	default:
-    	// 		return "The days are over";
-    	// 		break;
-    	// }
-
-
-
-
-
-    	return view('pages.home');
+    	return view('pages.home')->with('featuredVideo', $featuredVideo)->with('allVideos', $allVideos);
     }
 
 

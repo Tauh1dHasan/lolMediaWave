@@ -2,4 +2,6 @@ Start working on login system
 logout system
 Protect all the admin routes
 
-fetch all the data on front end
+	fetch all the data on front end
+prepare /play page for all indivudual video 
+substr video description. show only 15 character of description on video

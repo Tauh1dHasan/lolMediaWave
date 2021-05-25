@@ -52,7 +52,10 @@
                            </a>
 
                            <div class="d-inline-block w-100 text-center p-3">
-                              <a class="bg-primary iq-sign-btn" href="sign-in.html" role="button">Sign out</a>
+                              <form action="/logout" method="post">
+                                 @csrf
+                                 <input class="bg-primary iq-sign-btn" type="submit" value="Logout">
+                              </form>
                            </div>
 
                         </div>

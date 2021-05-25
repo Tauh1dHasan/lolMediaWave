@@ -31,6 +31,8 @@ Route::get('/play', [PagesController::class, 'play']);
 
 // User Routes
 Route::get('/login', [UserController::class, 'login']);
+Route::post('/login', [UserController::class, 'loginFunction']);
+Route::post('/logout', [UserController::class, 'logout']);
 
 
 // Backend Routes

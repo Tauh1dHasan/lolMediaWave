@@ -46,20 +46,27 @@
       <section class="iq-main-slider p-0">
 
          <div id="tvshows-slider">
-            <div>
-               <a href="/play">
-                  <div class="shows-img">
-                     <img src="images/movie-banner/1.jpg" class="w-100" alt="">
-                     <div class="shows-content">
-                        <h4 class="text-white mb-1">Open Dead Shot</h4>
-                        <div class="movie-time d-flex align-items-center">
-                           <span class="text-white">This video is about....</span>
-                        </div>
+            @foreach ($featuredVideo as $Fvideo)
+               <div>
+                  <a href="/play/{{ $Fvideo->code }}">
+                     <div class="shows-img" style="margin-top:5%; height: 80vh">
+                        
+
+                           <iframe style="height:80vh" class="w-100" src="https://www.youtube.com/embed/{{ $Fvideo->code }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                           <div class="shows-content">
+                              <h4 class="text-white mb-1">{{ $Fvideo->title }}</h4>
+                              <div class="movie-time d-flex align-items-center">
+                                 <span class="text-white">{{ $Fvideo->description }}</span>
+                              </div>
+                           </div>
+
+                        
+                        
                      </div>
-                  </div>
-               </a>
-            </div>
-      
+                  </a>
+               </div>
+            @endforeach
          </div>
       
       </section>
@@ -81,279 +88,28 @@
 
                      <div class="favorites-contens">
                         <div class="list-inline row p-0 mb-0">
+                           
+                           @foreach ($allVideos as $avideo)
+                              <div class="col-lg-3 col-md-4 col-sm-12">
+                                 <a href="/play/{{ $avideo->code }}">
 
+                                    <div class="shows-img" style="margin-top:5%; padding-left: 10px">
+                                       
+                                       <iframe src="https://www.youtube.com/embed/{{ $avideo->code }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                           <div class="slide-item col-lg-3 col-md-3 col-sm-12 pt-3">
-                              <a href="/play">
-                                 <div class="block-images position-relative">
-                                    <div class="img-box">
-                                       <img src="images/upcoming/01.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="block-description">
-                                       <h6 class="iq-title">
-                                          <a href="/play">The Last Breath</a>
-                                       </h6>
-                                       <div class="movie-time d-flex align-items-center my-2">
-                                          <span class="text-white">This video is about....</span>
+                                       <div class="shows-content">
+                                          <h4 class="text-white mb-1">{{ $avideo->title }}</h4>
+                                          <div class="movie-time d-flex align-items-center">
+                                             <span class="text-white">{{ $avideo->description }}</span>
+                                          </div>
                                        </div>
-                                       <div class="hover-buttons">
-                                          <a href="/play">
-                                             <span class="btn btn-hover" style="background: {{ $dayColor }}">
-                                                <i class="fa fa-play mr-1" aria-hidden="true"></i>
-                                                Play Now
-                                             </span>
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </a>
-                           </div>
 
-
-                           <div class="slide-item col-lg-3 col-md-3 col-sm-12 pt-3">
-                                 <div class="block-images position-relative">
-                                    <div class="img-box">
-                                       <img src="images/upcoming/02.jpg" class="img-fluid" alt="">
                                     </div>
-                                    <div class="block-description">
-                                       <h6 class="iq-title"><a href="show-details.html">Last Night</a></h6>
-                                       <div class="movie-time d-flex align-items-center my-2">
-                                          <span class="text-white">This video is about....</span>
-                                       </div>
-                                       <div class="hover-buttons">
-                                          <span class="btn btn-hover">
-                                             <i class="fa fa-play mr-1" aria-hidden="true"></i>
-                                             Play Now
-                                          </span>
-                                       </div>
-                                    </div>
-                                    
-                                 </div>
-                           </div>
 
-
-                           <div class="slide-item col-lg-3 col-md-3 col-sm-12 pt-3">
-                                 <div class="block-images position-relative">
-                                    <div class="img-box">
-                                       <img src="images/upcoming/03.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="block-description">
-                                       <h6 class="iq-title"><a href="show-details.html">1980</a></h6>
-                                       <div class="movie-time d-flex align-items-center my-2">
-                                          <span class="text-white">This video is about....</span>
-                                       </div>
-                                       <div class="hover-buttons">
-                                          <span class="btn btn-hover">
-                                             <i class="fa fa-play mr-1" aria-hidden="true"></i>
-                                             Play Now
-                                          </span>
-                                       </div>
-                                    </div>
-                                    
-                                 </div>
-                           </div>
-
-
-                           <div class="slide-item col-lg-3 col-md-3 col-sm-12 pt-3">
-                                 <div class="block-images position-relative">
-                                    <div class="img-box">
-                                       <img src="images/upcoming/04.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="block-description">
-                                       <h6 class="iq-title"><a href="show-details.html">Looters</a></h6>
-                                       <div class="movie-time d-flex align-items-center my-2">
-                                          <span class="text-white">This video is about....</span>
-                                       </div>
-                                       <div class="hover-buttons">
-                                          <span class="btn btn-hover">
-                                             <i class="fa fa-play mr-1" aria-hidden="true"></i>
-                                             Play Now
-                                          </span>
-                                       </div>
-                                    </div>
-                                    
-                                 </div>
-                           </div>
-
-
-                           <div class="slide-item col-lg-3 col-md-3 col-sm-12 pt-3">
-                                 <div class="block-images position-relative">
-                                    <div class="img-box">
-                                       <img src="images/upcoming/05.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="block-description">
-                                       <h6 class="iq-title"><a href="show-details.html">Vugotronic</a></h6>
-                                       <div class="movie-time d-flex align-items-center my-2">
-                                          
-                                          <span class="text-white">This video is about....</span>
-                                       </div>
-                                       <div class="hover-buttons">
-                                          <span class="btn btn-hover">
-                                             <i class="fa fa-play mr-1" aria-hidden="true"></i>
-                                             Play Now
-                                          </span>
-                                       </div>
-                                    </div>
-                                    
-                                 </div>
-                           </div>
-
-
-                           <div class="slide-item col-lg-3 col-md-3 col-sm-12 pt-3">
-                                 <div class="block-images position-relative">
-                                    <div class="img-box">
-                                       <img src="images/upcoming/01.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="block-description">
-                                       <h6 class="iq-title"><a href="show-details.html">The Last Breath</a></h6>
-                                       <div class="movie-time d-flex align-items-center my-2">
-                                          <span class="text-white">This video is about....</span>
-                                       </div>
-                                       <div class="hover-buttons">
-                                          <span class="btn btn-hover"><i class="fa fa-play mr-1" aria-hidden="true"></i>
-                                             Play Now
-                                          </span>
-                                       </div>
-                                    </div>
-                                    
-                                 </div>
-                           </div>
-
-
-                           <div class="slide-item col-lg-3 col-md-3 col-sm-12 pt-3">
-                                 <div class="block-images position-relative">
-                                    <div class="img-box">
-                                       <img src="images/upcoming/02.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="block-description">
-                                       <h6 class="iq-title"><a href="show-details.html">Last Night</a></h6>
-                                       <div class="movie-time d-flex align-items-center my-2">
-                                          <span class="text-white">This video is about....</span>
-                                       </div>
-                                       <div class="hover-buttons">
-                                          <span class="btn btn-hover">
-                                             <i class="fa fa-play mr-1" aria-hidden="true"></i>
-                                             Play Now
-                                          </span>
-                                       </div>
-                                    </div>
-                                    
-                                 </div>
-                           </div>
-
-
-                           <div class="slide-item col-lg-3 col-md-3 col-sm-12 pt-3">
-                                 <div class="block-images position-relative">
-                                    <div class="img-box">
-                                       <img src="images/upcoming/03.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="block-description">
-                                       <h6 class="iq-title"><a href="show-details.html">1980</a></h6>
-                                       <div class="movie-time d-flex align-items-center my-2">
-                                          <span class="text-white">This video is about....</span>
-                                       </div>
-                                       <div class="hover-buttons">
-                                          <span class="btn btn-hover">
-                                             <i class="fa fa-play mr-1" aria-hidden="true"></i>
-                                             Play Now
-                                          </span>
-                                       </div>
-                                    </div>
-                                    
-                                 </div>
-                           </div>
-
-
-                           <div class="slide-item col-lg-3 col-md-3 col-sm-12 pt-3">
-                                 <div class="block-images position-relative">
-                                    <div class="img-box">
-                                       <img src="images/upcoming/04.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="block-description">
-                                       <h6 class="iq-title"><a href="show-details.html">Looters</a></h6>
-                                       <div class="movie-time d-flex align-items-center my-2">
-                                          <span class="text-white">This video is about....</span>
-                                       </div>
-                                       <div class="hover-buttons">
-                                          <span class="btn btn-hover">
-                                             <i class="fa fa-play mr-1" aria-hidden="true"></i>
-                                             Play Now
-                                          </span>
-                                       </div>
-                                    </div>
-                                    
-                                 </div>
-                           </div>
-
-
-                           <div class="slide-item col-lg-3 col-md-3 col-sm-12 pt-3">
-                                 <div class="block-images position-relative">
-                                    <div class="img-box">
-                                       <img src="images/upcoming/05.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="block-description">
-                                       <h6 class="iq-title"><a href="show-details.html">Vugotronic</a></h6>
-                                       <div class="movie-time d-flex align-items-center my-2">
-                                          
-                                          <span class="text-white">This video is about....</span>
-                                       </div>
-                                       <div class="hover-buttons">
-                                          <span class="btn btn-hover">
-                                             <i class="fa fa-play mr-1" aria-hidden="true"></i>
-                                             Play Now
-                                          </span>
-                                       </div>
-                                    </div>
-                                    
-                                 </div>
-                           </div>
-
-                           <div class="slide-item col-lg-3 col-md-3 col-sm-12 pt-3">
-                                 <div class="block-images position-relative">
-                                    <div class="img-box">
-                                       <img src="images/upcoming/05.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="block-description">
-                                       <h6 class="iq-title"><a href="show-details.html">Vugotronic</a></h6>
-                                       <div class="movie-time d-flex align-items-center my-2">
-                                          
-                                          <span class="text-white">This video is about....</span>
-                                       </div>
-                                       <div class="hover-buttons">
-                                          <span class="btn btn-hover">
-                                             <i class="fa fa-play mr-1" aria-hidden="true"></i>
-                                             Play Now
-                                          </span>
-                                       </div>
-                                    </div>
-                                    
-                                 </div>
-                           </div>
-
-                           <div class="slide-item col-lg-3 col-md-3 col-sm-12 pt-3">
-                                 <div class="block-images position-relative">
-                                    <div class="img-box">
-                                       <img src="images/upcoming/05.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="block-description">
-                                       <h6 class="iq-title"><a href="show-details.html">Vugotronic</a></h6>
-                                       <div class="movie-time d-flex align-items-center my-2">
-                                          
-                                          <span class="text-white">This video is about....</span>
-                                       </div>
-                                       <div class="hover-buttons">
-                                          <span class="btn btn-hover">
-                                             <i class="fa fa-play mr-1" aria-hidden="true"></i>
-                                             Play Now
-                                          </span>
-                                       </div>
-                                    </div>
-                                    
-                                 </div>
-                           </div>
-
-
-
+                                 </a>
+                              </div>
+                           @endforeach
+                           
                         </div>
                      </div>
                   </div>

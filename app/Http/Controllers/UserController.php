@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+// User setting page show
     public function index()
     {
     	$user = User::orderBy('id', 'desc')->get();
@@ -17,6 +18,7 @@ class UserController extends Controller
     	return view('admin.accountSetting')->with('users', $user)->with('socials', $social);
     }
 
+// User info update function
     public function update(Request $request)
     {
     	$id = 1;
@@ -31,6 +33,7 @@ class UserController extends Controller
     	return redirect('/account-setting')->with('success', 'Account information updated...');
     }
 
+// Social links update function
     public function socialUpdate(Request $request)
     {
     	$id = 1;
@@ -47,8 +50,21 @@ class UserController extends Controller
     	return redirect('/account-setting')->with('success', 'Social Media link updated...');
     }
 
+// Showing user login page
     public function login()
     {
-        return 123;
+        return view('admin.login');
+    }
+
+// User login function
+    public function loginFunction()
+    {
+
+    }
+
+// User logout function
+    public function logout()
+    {
+        return 124;
     }
 }
