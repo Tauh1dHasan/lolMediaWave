@@ -77,47 +77,47 @@
                             <h2 class="iq-title">
                                 Say Hello..!
                             </h2>                      
-                            <p class="iq-title-desc">Fill up this form to reach our stunning team and click on send message. </p>
+                            <p class="iq-title-desc">Are you a Chakras Support Professional? Want to submit content or work with us to have a more positive effect on your life and others? Contact Us. </p>
                         </div>
 
                         <div class="wrapper">
 
-                            <form action="#" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+                            <form action="#" method="get" class="wpcf7-form init" novalidate="novalidate" data-status="init">
                                 
                                 <div class="contact-form contact-style">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="cfield">
                                                 <span class="wpcf7-form-control-wrap your-name">
-                                                    <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name">
+                                                    <input type="text" name="First-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="First Name">
                                                 </span>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="cfield">
                                                 <span class="wpcf7-form-control-wrap your-subject">
-                                                    <input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Last Name">
+                                                    <input type="text" name="last-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Last Name">
                                                 </span>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="cfield">
                                                 <span class="wpcf7-form-control-wrap tel-478">
-                                                    <input type="tel" name="tel-478" value="" size="40" maxlength="140" minlength="10" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone Number">
+                                                    <input type="tel" name="phone" value="" size="40" maxlength="140" minlength="10" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone Number">
                                                 </span>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="cfield">
                                                 <span class="wpcf7-form-control-wrap your-email">
-                                                    <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email">
+                                                    <input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email">
                                                 </span>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="cfield">
                                                 <span class="wpcf7-form-control-wrap your-message">
-                                                    <textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Message"></textarea>
+                                                    <textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Message"></textarea>
                                                 </span>
                                             </div>
                                         </div>

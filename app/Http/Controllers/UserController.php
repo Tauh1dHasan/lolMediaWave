@@ -9,6 +9,12 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+// construct function to protect from un authentigate user
+    public function __construct()
+    {
+        $this->middleware(['auth']);
+    }
+    
 // User setting page show
     public function index()
     {
@@ -50,21 +56,5 @@ class UserController extends Controller
     	return redirect('/account-setting')->with('success', 'Social Media link updated...');
     }
 
-// Showing user login page
-    public function login()
-    {
-        return view('admin.login');
-    }
 
-// User login function
-    public function loginFunction()
-    {
-
-    }
-
-// User logout function
-    public function logout()
-    {
-        return 124;
-    }
 }

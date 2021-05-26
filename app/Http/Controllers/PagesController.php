@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\FeaturedVideo;
 use App\Models\AllVideo;
+use App\Models\Social;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -35,10 +36,20 @@ class PagesController extends Controller
     	return view('pages.contact');
     }
 
-    public function play()
+    public function play($code)
     {
-    	// need to create model $code will be matched from database
-    	return view('pages.play');
+    	$video = FeaturedVideo::where('code', $code)->first();
+
+        if ($video == null) {
+            
+            $video = AllVideo::where('code', $code)->first();
+
+        }
+
+        $CurrentDay = date("l");
+        $allVideos = AllVideo::where('day', $CurrentDay)->get();
+
+    	return view('pages.play')->with('video', $video)->with('allVideos', $allVideos);
     	
     }
 

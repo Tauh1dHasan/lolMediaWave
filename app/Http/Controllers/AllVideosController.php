@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 class AllVideosController extends Controller
 {
 
+// construct function to protect from un authentigate user
+    public function __construct()
+    {
+        $this->middleware(['auth']);
+    }
+
 // This function will show all the stored videos
     public function index()
     {

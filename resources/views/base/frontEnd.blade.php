@@ -99,24 +99,29 @@
                       <h6 class="footer-link-title">
                           Follow Us :
                       </h6>
+{{-- getting social links from database --}}
+        @php
+          $id = 1;
+          $social = \App\Models\Social::find($id);
+        @endphp
                       <ul class="info-share"> 
                           <li>
-                            <a target="_blank" href="#" style="background: {{ $dayColor }}">
+                            <a target="_blank" href="{{ $social->facebook }}" style="background: {{ $dayColor }}">
                               <i class="fa fa-facebook"></i>
                             </a>
                           </li>
                           <li>
-                            <a target="_blank" href="#" style="background: {{ $dayColor }}">
+                            <a target="_blank" href="{{ $social->twitter }}" style="background: {{ $dayColor }}">
                               <i class="fa fa-twitter"></i>
                             </a>
                           </li>
                           <li>
-                            <a target="_blank" href="#" style="background: {{ $dayColor }}">
+                            <a target="_blank" href="{{ $social->instagram }}" style="background: {{ $dayColor }}">
                               <i class="fa fa-instagram"></i>
                             </a>
                           </li>
                           <li>
-                            <a target="_blank" href="#" style="background: {{ $dayColor }}">
+                            <a target="_blank" href="{{ $social->youtube }}" style="background: {{ $dayColor }}">
                               <i class="fa fa-youtube"></i>
                             </a>
                           </li>

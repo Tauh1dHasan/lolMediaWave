@@ -109,12 +109,8 @@
                         <h2 class="iq-title text-capitalize">
                            Our Goal
                         </h2>
-                        <p class="iq-title-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla ut ratione quas a voluptates perferendis corrupti dolore ipsa commodi nostrum velit repellendus, quibusdam aut molestias officia, sit ab iure, expedita.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="iq-title-desc">Welcome to Legacy of Leaders Multimedia Wave Group. 6 years ago LOL Wave Group LLC was created to provide a platform for content creators to express their best selves freely. Following the creation of Leader Legend 100: Media that Matters newsprint, the world’s first chakras world travel guide: Chakras World Tour and the Chakras Planner: Universal Excellence Workbook, LOLWave.com has finally been manifested. LOL Wave has been cultivated to provide a home for seekers of better ways of self sufficiency. Each day is represented by its respective Chakra while we provide the supportive content directly from the leaders doing better for self and the universal conscious community.</p>
+                        <p>These days the internet can be a scary place to surf with all the useless and intentional distractions everywhere in forms of spam, trolls, fishy ads, etc. LOL Wave’s mission is to provide the best chakras supportive content available online to cultivate an environment that breeds universal wealth and success. Knowing and doing better is essential for aligning with our own unique higher purposes.</p>
                      </div>
                   </div>
                </div>

@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
+// construct function to protect from un authentigate user
+    public function __construct()
+    {
+        $this->middleware(['auth']);
+    }
+    
     public function index()
     {
     	$FVideos = FeaturedVideo::all();

@@ -6,6 +6,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FeaturedVideosController;
 use App\Http\Controllers\AllVideosController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,13 +27,13 @@ use App\Http\Controllers\UserController;
 Route::get('/', [PagesController::class, 'index']);
 Route::get('/about', [PagesController::class, 'about']);
 Route::get('/contact', [PagesController::class, 'contact']);
-Route::get('/play', [PagesController::class, 'play']);
+Route::get('/play/{code}', [PagesController::class, 'play']);
 
 
 // User Routes
-Route::get('/login', [UserController::class, 'login']);
-Route::post('/login', [UserController::class, 'loginFunction']);
-Route::post('/logout', [UserController::class, 'logout']);
+Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::post('/login', [LoginController::class, 'loginFunction']);
+Route::post('/logout', [LoginController::class, 'logout']);
 
 
 // Backend Routes

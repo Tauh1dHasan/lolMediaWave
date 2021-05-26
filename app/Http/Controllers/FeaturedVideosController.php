@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class FeaturedVideosController extends Controller
 {
+// construct function to protect from un authentigate user
+    public function __construct()
+    {
+        $this->middleware(['auth']);
+    }
+    
     public function index()
     {
     	$featuredVideos = FeaturedVideo::all();

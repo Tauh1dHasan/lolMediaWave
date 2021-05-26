@@ -50,7 +50,7 @@
 
                   <li>
                      <a href="/day/saturday">
-                        <i class="las la-user-plus"></i>Saturday
+                        <i class="las la-eye"></i>Saturday
                      </a>
                   </li>
 
