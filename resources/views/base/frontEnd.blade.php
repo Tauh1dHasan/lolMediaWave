@@ -45,7 +45,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>GodIsThePlug</title>
+   <title>LoLMediaWave</title>
    <!-- Favicon -->
    <link rel="shortcut icon" href="{{ URL::asset('images/favicon.ico') }}" />
    <!-- Bootstrap CSS -->
@@ -91,7 +91,7 @@
                   <div class="col-lg-10">
                       <div class="widget text-left">        
                           <div class="textwidget">
-                              <p><small>© 2021 GodIsThePlug. All Rights Reserved. All videos, images, content on this platform are property of GodIsThePlug</small></p>
+                              <p><small>© 2021 LoLMediaWave. All Rights Reserved. All videos, images, content on this platform are property of LoLMediaWave</small><br>Developed By <a href="https://tauh1dhasan.github.io/Tauh1dHasan/" target="_blank" style="color:red;">Tauhid</a></p>
                           </div>
                       </div>                        
                   </div>

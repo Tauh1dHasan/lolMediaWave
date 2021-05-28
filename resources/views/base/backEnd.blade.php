@@ -5,7 +5,7 @@
    <!-- Required meta tags -->
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <title>Admin GodIsThePlug</title>
+   <title>Admin LoLMediaWave</title>
    <!-- Favicon -->
    <link rel="shortcut icon" href="{{ URL::asset('https://iqonic.design/themes/streamitnew/dashboard/html/assets/images/favicon.ico') }}" />
    <!-- Bootstrap CSS -->
@@ -57,7 +57,9 @@
                </ul>
             </div>
             <div class="col-lg-6 text-right">
-               Copyright 2020 <a href="#">GodIsThePlug</a> All Rights Reserved.
+               Copyright 2020 <a href="#">LoLMediaWave</a> All Rights Reserved.
+               <br>
+               <p>Developed By <a href="https://tauh1dhasan.github.io/Tauh1dHasan/" target="_blank" style="color:red;">Tauhid</a></p>
             </div>
          </div>
       </div>

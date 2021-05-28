@@ -12,7 +12,7 @@
             <div class="iq-navbar-logo d-flex justify-content-between">
                <a href="/dashboard" class="header-logo">
                   <div class="logo-title">
-                     <span class="text-primary text-uppercase">GodIsThePlug</span>
+                     <span class="text-primary text-uppercase">LoLMediaWave</span>
                   </div>
                </a>
             </div>

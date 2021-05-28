@@ -24,7 +24,8 @@
                     <div class="col-lg-12 col-sm-12">
 
                         <div class="row contact-detail text-center">
-                           <div class="col-md-4">
+
+                           <div class="col-md-6">
                               <div class="icon-box">
                                  <span class="icon-svg icon-svg d-flex justify-content-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path d="M256,0C156.748,0,76,80.748,76,180c0,33.534,9.289,66.26,26.869,94.652l142.885,230.257 c2.737,4.411,7.559,7.091,12.745,7.091c0.04,0,0.079,0,0.119,0c5.231-0.041,10.063-2.804,12.75-7.292L410.611,272.22 C427.221,244.428,436,212.539,436,180C436,80.748,355.252,0,256,0z M384.866,256.818L258.272,468.186l-129.905-209.34 C113.734,235.214,105.8,207.95,105.8,180c0-82.71,67.49-150.2,150.2-150.2S406.1,97.29,406.1,180 C406.1,207.121,398.689,233.688,384.866,256.818z"></path> </g> </g> <g> <g> <path d="M256,90c-49.626,0-90,40.374-90,90c0,49.309,39.717,90,90,90c50.903,0,90-41.233,90-90C346,130.374,305.626,90,256,90z M256,240.2c-33.257,0-60.2-27.033-60.2-60.2c0-33.084,27.116-60.2,60.2-60.2s60.1,27.116,60.1,60.2 C316.1,212.683,289.784,240.2,256,240.2z"></path> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
@@ -39,7 +40,7 @@
                               </div>
                            </div>
 
-                           <div class="col-md-4">
+                           <div class="col-md-6">
                               <div class="iq-contact-list" data-element_type="column">
                               <div class="icon-box">
                                  <span class="icon-svg icon-svg d-flex justify-content-center">
@@ -55,21 +56,7 @@
                            </div>
                            </div>
 
-                           <div class="col-md-4">
-                              <div class="iq-contact-list" data-element_type="column">
-                              <div class="icon-box">
-                                 <span class="icon-svg icon-svg d-flex justify-content-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path d="M467,80.609H45c-24.813,0-45,20.187-45,45v260.782c0,24.813,20.187,45,45,45h422c24.813,0,45-20.187,45-45V125.609 C512,100.796,491.813,80.609,467,80.609z M461.127,110.609l-6.006,5.001L273.854,266.551c-10.346,8.614-25.364,8.614-35.708,0 L56.879,115.61l-6.006-5.001H461.127z M30,132.267L177.692,255.25L30,353.543V132.267z M467,401.391H45 c-7.248,0-13.31-5.168-14.699-12.011l171.445-114.101l17.204,14.326c10.734,8.938,23.893,13.407,37.051,13.407 c13.158,0,26.316-4.469,37.051-13.407l17.204-14.326l171.444,114.1C480.31,396.224,474.248,401.391,467,401.391z M482,353.543 l-147.692-98.292L482,132.267V353.543z"></path> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>                                               </span>
-                              </div>
-
-                              <div class="icon-box-content">
-                                 <h3 class="icon-box-title">
-                                    <span>Email Us</span>
-                                 </h3>
-                                 <p class="icon-box-description"><a href="https://iqonic.design/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="80f3f5f0f0eff2f4c0f3f4f2e5e1ede9f4aee3efed">[email&#160;protected]</a></p>
-                              </div>
-                              </div>
-                           </div>
+                           
                            
                         </div>
 
