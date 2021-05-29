@@ -27,6 +27,8 @@ use App\Http\Controllers\LoginController;
 Route::get('/', [PagesController::class, 'index']);
 Route::get('/about', [PagesController::class, 'about']);
 Route::get('/contact', [PagesController::class, 'contact']);
+// mail sending post route
+Route::post('/contact', [PagesController::class, 'sendMail']);
 Route::get('/play/{code}', [PagesController::class, 'play']);
 
 

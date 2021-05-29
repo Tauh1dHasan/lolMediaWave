@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 28, 2021 at 08:10 PM
+-- Generation Time: May 30, 2021 at 12:16 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -49,6 +49,35 @@ INSERT INTO `all_videos` (`id`, `created_at`, `updated_at`, `code`, `title`, `da
 (5, '2021-05-22 12:24:56', '2021-05-22 12:24:56', 'XyYdVpXSr_o', 'Rainy day Home alone', 'Wednesday', '22th May 2021', 'Video description'),
 (6, '2021-05-22 12:26:11', '2021-05-22 12:26:11', 'R9ObV4eB2qU', 'Finding Peace', 'Wednesday', '22th May 2021', 'Video description is here'),
 (7, '2021-05-25 12:43:55', '2021-05-25 12:43:55', 'ZcuVGUr2FUs', 'Closer to you', 'Wednesday', '25th May 2021', 'Nothing to describe just enjoy it');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contracts`
+--
+
+CREATE TABLE `contracts` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `message` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `contracts`
+--
+
+INSERT INTO `contracts` (`id`, `created_at`, `updated_at`, `name`, `phone`, `email`, `message`) VALUES
+(1, '2021-05-29 15:47:07', '2021-05-29 15:47:07', 'Tauhid Hasan', '01677163339', 'm.tah69@gmail.com', 'message test'),
+(2, '2021-05-29 15:56:46', '2021-05-29 15:56:46', 'Tauhid Hasan', '01677163339', 'm.tah69@gmail.com', 'Test 2'),
+(3, '2021-05-29 15:58:54', '2021-05-29 15:58:54', 'Tauhid Hasan', '01677163339', 'm.tah69@gmail.com', 'Test 2'),
+(4, '2021-05-29 16:07:38', '2021-05-29 16:07:38', 'Tauhid Hasan', '01677163339', 'm.tah69@gmail.com', 'Test 5'),
+(5, '2021-05-29 16:09:07', '2021-05-29 16:09:07', 'Tauhid Hasan', '01677163339', 'm.tah69@gmail.com', 'Test 5'),
+(6, '2021-05-29 16:10:12', '2021-05-29 16:10:12', 'Tauhid Hasan', '01677163339', 'm.tah69@gmail.com', 'Test 5'),
+(7, '2021-05-29 16:13:32', '2021-05-29 16:13:32', 'Tauhid Hasan', '01677163339', 'm.tah69@gmail.com', 'Test 5');
 
 -- --------------------------------------------------------
 
@@ -118,7 +147,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (3, '2019_08_19_000000_create_failed_jobs_table', 1),
 (4, '2021_05_20_191729_create_socials_table', 2),
 (5, '2021_05_21_134333_create_featured_videos_table', 3),
-(6, '2021_05_22_175627_create_all_videos_table', 4);
+(6, '2021_05_22_175627_create_all_videos_table', 4),
+(7, '2021_05_29_212150_create_contracts_table', 5);
 
 -- --------------------------------------------------------
 
@@ -190,6 +220,12 @@ ALTER TABLE `all_videos`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `contracts`
+--
+ALTER TABLE `contracts`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
@@ -238,6 +274,12 @@ ALTER TABLE `all_videos`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
+-- AUTO_INCREMENT for table `contracts`
+--
+ALTER TABLE `contracts`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- AUTO_INCREMENT for table `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
@@ -253,7 +295,7 @@ ALTER TABLE `featured_videos`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `socials`
